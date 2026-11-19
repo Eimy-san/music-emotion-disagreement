@@ -1,0 +1,9 @@
+dataset,stage,n_rows,n_unique_items,notes
+MEET,raw_participants,200,200,Raw_Data sheet participants.
+MEET,participant_stimulus_long,23200,116,Participant x stimulus long table.
+MEET,stimulus_summary,116,116,Stimulus-level disagreement summary.
+MERP,eligible_raw_rows_excluding_batch8,278,4,Raw MTurk rows after excluding batch8_all_world_NONmaster.csv.
+MERP,approved_rows,267,260,Approved rows only.
+MERP,worker_song_trials,3479,54,Worker x song trials reconstructed from Approved rows.
+MERP,song_summary_all,54,54,Song-level disagreement summary including DEAM slots.
+MERP,song_summary_formal_main_pool,50,50,Formal validation songs from main pool only.

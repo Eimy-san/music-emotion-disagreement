@@ -1,0 +1,8 @@
+item_type,name,status,notes
+feature,tempo,pending_audio,Frozen for Step 2A; not extracted because MEET audio files are not present locally.
+feature,spectral_centroid_mean,pending_audio,Frozen for Step 2A; not extracted because MEET audio files are not present locally.
+feature,dynamic_range,pending_audio,Frozen for Step 2A; not extracted because MEET audio files are not present locally.
+feature,spectral_flux_proxy,pending_audio,Frozen for Step 2A; not extracted because MEET audio files are not present locally.
+cue_conflict_rule,bright_slow,frozen_not_run,Rule frozen for Step 2B after lightweight feature extraction becomes possible.
+cue_conflict_rule,fast_minor_proxy,frozen_not_run,Rule frozen for Step 2B after lightweight feature extraction becomes possible.
+cue_conflict_rule,stable_harmony_high_flux,frozen_not_run,Rule frozen for Step 2B after lightweight feature extraction becomes possible.

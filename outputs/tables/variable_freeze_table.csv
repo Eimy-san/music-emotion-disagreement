@@ -1,0 +1,23 @@
+dataset,item_type,name,freeze_status,writing_role,reason
+MEET,participant_level_outcome,mean_valence_abs_dev,primary,main_text,Best participant-level bridge to listener-factor analysis and aligned with the continuous disagreement framing.
+MEET,participant_level_outcome,mean_arousal_abs_dev,primary,main_text,Co-primary participant-level continuous outcome paired with valence.
+MEET,stimulus_level_outcome,valence_std,primary,main_text,Frozen continuous stimulus-level disagreement outcome from Step 2A.
+MEET,stimulus_level_outcome,arousal_std,primary,main_text,Frozen continuous stimulus-level disagreement outcome from Step 2A.
+MEET,outcome,modal_label_disagree_rate,auxiliary,supporting_text,"Useful participant-level discrete check, but not the cross-dataset main outcome."
+MEET,outcome,discrete_entropy,auxiliary,supporting_text,Good robustness check but secondary to continuous disagreement.
+MEET,listener_factor,group,primary,main_text,Most interpretable and strongest MEET signal; keep separate from years_musical_education and musical_experience in multivariable models because of collinearity/overlap.
+MEET,listener_factor,age,primary,supporting_text,"Shows the clearest participant-level association, though small."
+MEET,listener_factor,years_musical_education,exploratory,supporting_text,Conceptually relevant but weak in Step 2B1 and partly overlapping with group/musical_experience.
+MEET,listener_factor,musical_experience,exploratory,supporting_text,Conceptually relevant but weak in Step 2B1 and partly overlapping with group/years_musical_education.
+MEET,listener_factor,hours_musical_listening,exploratory,supporting_text,"Retained as a light control, but no clear Step 2B1 signal."
+MEET,listener_factor,bai,exploratory,not_for_main_text,Weak and unstable in Step 2B1; keep out of main written claims.
+MEET,listener_factor,bdi,exploratory,not_for_main_text,Weak and unstable in Step 2B1; keep out of main written claims.
+MEET,listener_factor,hours_musical_study,excluded,not_for_main_text,Excluded because of overlap with education/training intensity and collinearity risk.
+MEET,listener_factor,years_of_study,excluded,not_for_main_text,Excluded because it is not music-specific enough for the core claim.
+MEET,listener_factor,musical_listening,excluded,not_for_main_text,Excluded because it overlaps semantically with hours_musical_listening and is less interpretable.
+MERP,participant_level_outcome,mean_valence_abs_dev,primary,main_text,Primary worker-level continuous validation outcome.
+MERP,participant_level_outcome,mean_arousal_abs_dev,primary,main_text,Co-primary worker-level continuous validation outcome.
+MERP,listener_factor,training,primary,main_text,Most stable and interpretable MERP listener variable in Step 2B1.
+MERP,listener_factor,age,exploratory,supporting_text,Shows some direction but should be interpreted cautiously.
+MERP,listener_factor,training_duration,excluded,not_for_main_text,Excluded because of dirty coding and poor stability.
+MERP,listener_factor,gender,excluded,not_for_main_text,Deferred to keep the minimal validation focused and interpretable.

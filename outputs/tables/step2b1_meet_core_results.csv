@@ -1,0 +1,67 @@
+dataset,section,outcome,predictor,estimate,estimate_label,group_a,group_b,group_a_mean,group_b_mean,statistic,p_value,n,extra
+MEET,stimulus_level_group_comparison,valence_std,musician_minus_non_musician,0.07113700370266542,paired_mean_difference,musician,non_musician,2.1087258948635546,2.0375888911608895,6.152148779609216,1.1432777791003305e-08,116,paired_t_test;wilcoxon_p=6.88706e-08;positive_diffs=80
+MEET,stimulus_level_group_comparison,arousal_std,musician_minus_non_musician,0.09606118878483332,paired_mean_difference,musician,non_musician,2.13163802450227,2.035576835717437,7.195192875819122,6.839068646037201e-11,116,paired_t_test;wilcoxon_p=1.47564e-09;positive_diffs=84
+MEET,stimulus_level_group_comparison,discrete_entropy,musician_minus_non_musician,0.07467076189389726,paired_mean_difference,musician,non_musician,1.3813657281123581,1.3066949662184606,4.7738650556838715,5.363670747760003e-06,116,paired_t_test;wilcoxon_p=1.19245e-06;positive_diffs=83
+MEET,participant_level_group_comparison,mean_valence_abs_dev,musician_minus_non_musician,0.07196379310344869,mean_difference,musician,non_musician,1.7253310344827588,1.6533672413793101,0.9330000389852743,0.3519566672316391,200,welch_t_test
+MEET,participant_level_group_comparison,mean_arousal_abs_dev,musician_minus_non_musician,0.10375689655172393,mean_difference,musician,non_musician,1.7704189655172415,1.6666620689655176,1.2311479759094683,0.21972825712828523,200,welch_t_test
+MEET,participant_level_group_comparison,modal_label_disagree_rate,musician_minus_non_musician,0.01465517241379316,mean_difference,musician,non_musician,0.386896551724138,0.37224137931034484,0.7769274447529869,0.43813273788398543,200,welch_t_test
+MEET,participant_level_correlation,mean_valence_abs_dev,age,-0.14522255246497248,pearson_r,,,,,-0.14522255246497248,0.04019166869977741,200,pearson_correlation
+MEET,participant_level_correlation,mean_valence_abs_dev,years_musical_education,0.0028429313834030297,pearson_r,,,,,0.0028429313834030297,0.9681304424397619,200,pearson_correlation
+MEET,participant_level_correlation,mean_valence_abs_dev,musical_experience,0.07175863133363637,pearson_r,,,,,0.07175863133363637,0.31260945533873086,200,pearson_correlation
+MEET,participant_level_correlation,mean_valence_abs_dev,hours_musical_listening,0.05400239558449592,pearson_r,,,,,0.05400239558449592,0.44756748352840287,200,pearson_correlation
+MEET,participant_level_correlation,mean_valence_abs_dev,bai,-0.005916753378968388,pearson_r,,,,,-0.005916753378968388,0.9337308591344383,200,pearson_correlation
+MEET,participant_level_correlation,mean_valence_abs_dev,bdi,0.028784871741465386,pearson_r,,,,,0.028784871741465386,0.685762862905478,200,pearson_correlation
+MEET,participant_level_correlation,mean_arousal_abs_dev,age,-0.01591599713962546,pearson_r,,,,,-0.01591599713962546,0.8229989096030728,200,pearson_correlation
+MEET,participant_level_correlation,mean_arousal_abs_dev,years_musical_education,0.048489521522192894,pearson_r,,,,,0.048489521522192894,0.49533485682736583,200,pearson_correlation
+MEET,participant_level_correlation,mean_arousal_abs_dev,musical_experience,0.08441255999070964,pearson_r,,,,,0.08441255999070964,0.23467052505840771,200,pearson_correlation
+MEET,participant_level_correlation,mean_arousal_abs_dev,hours_musical_listening,0.011527450744340997,pearson_r,,,,,0.011527450744340997,0.8713008774601319,200,pearson_correlation
+MEET,participant_level_correlation,mean_arousal_abs_dev,bai,0.04805072785681794,pearson_r,,,,,0.04805072785681794,0.49924958454229434,200,pearson_correlation
+MEET,participant_level_correlation,mean_arousal_abs_dev,bdi,-0.044968806760545633,pearson_r,,,,,-0.044968806760545633,0.5271982231435834,200,pearson_correlation
+MEET,participant_level_correlation,modal_label_disagree_rate,age,-0.043202944142038825,pearson_r,,,,,-0.043202944142038825,0.5435616426396613,200,pearson_correlation
+MEET,participant_level_correlation,modal_label_disagree_rate,years_musical_education,0.09719359133480401,pearson_r,,,,,0.09719359133480401,0.17095141559357735,200,pearson_correlation
+MEET,participant_level_correlation,modal_label_disagree_rate,musical_experience,0.03688771896910073,pearson_r,,,,,0.03688771896910073,0.6040551866856307,200,pearson_correlation
+MEET,participant_level_correlation,modal_label_disagree_rate,hours_musical_listening,0.028706370097544325,pearson_r,,,,,0.028706370097544325,0.6865746086266677,200,pearson_correlation
+MEET,participant_level_correlation,modal_label_disagree_rate,bai,0.10586341709960267,pearson_r,,,,,0.10586341709960267,0.13571323215695222,200,pearson_correlation
+MEET,participant_level_correlation,modal_label_disagree_rate,bdi,0.04494764202286709,pearson_r,,,,,0.04494764202286709,0.5273928596702685,200,pearson_correlation
+MEET,ols_model,mean_valence_abs_dev,group_bin,0.06851050123737462,model_group_age,,,,,0.8951107645719768,0.37182024072215536,200,model=model_group_age;r_squared=0.025055
+MEET,ols_model,mean_valence_abs_dev,age,-0.013281891792593759,model_group_age,,,,,-2.0440596468681655,0.04227832602716138,200,model=model_group_age;r_squared=0.025055
+MEET,ols_model_fit,mean_valence_abs_dev,model_group_age,0.0250548119890589,r_squared,,,,,2.5313207463049716,0.08213905638234376,200,formula=mean_valence_abs_dev ~ group_bin + age
+MEET,ols_model,mean_valence_abs_dev,group_bin,0.058280477238835796,model_a,,,,,0.7281477405600938,0.4674011149653242,200,model=model_a;r_squared=0.026402
+MEET,ols_model,mean_valence_abs_dev,age,-0.013084565635693867,model_a,,,,,-1.9820207702832051,0.048888803082835115,200,model=model_a;r_squared=0.026402
+MEET,ols_model,mean_valence_abs_dev,hours_musical_listening,0.0009143858237359746,model_a,,,,,0.41330486928476634,0.6798397432895347,200,model=model_a;r_squared=0.026402
+MEET,ols_model,mean_valence_abs_dev,bai,-0.001688614774308584,model_a,,,,,-0.23280669269767415,0.8161569493963814,200,model=model_a;r_squared=0.026402
+MEET,ols_model,mean_valence_abs_dev,bdi,0.0015605812901836307,model_a,,,,,0.18943624970470024,0.8499489642995977,200,model=model_a;r_squared=0.026402
+MEET,ols_model_fit,mean_valence_abs_dev,model_a,0.026401569742457442,r_squared,,,,,1.0521595702823539,0.3883840033597803,200,formula=mean_valence_abs_dev ~ group_bin + age + hours_musical_listening + bai + bdi
+MEET,ols_model,mean_valence_abs_dev,years_musical_education,0.0016334843820250931,model_b,,,,,0.29942564164593566,0.7649358430864024,200,model=model_b;r_squared=0.024192
+MEET,ols_model,mean_valence_abs_dev,age,-0.01364046947722905,model_b,,,,,-2.010468308957459,0.045766391721771243,200,model=model_b;r_squared=0.024192
+MEET,ols_model,mean_valence_abs_dev,hours_musical_listening,0.001072811191424107,model_b,,,,,0.478992587614891,0.6324833502764127,200,model=model_b;r_squared=0.024192
+MEET,ols_model,mean_valence_abs_dev,bai,-0.0023140532822964327,model_b,,,,,-0.3211060778399558,0.748475665603614,200,model=model_b;r_squared=0.024192
+MEET,ols_model,mean_valence_abs_dev,bdi,0.0017591876284733556,model_b,,,,,0.21344025710168024,0.8312077228871912,200,model=model_b;r_squared=0.024192
+MEET,ols_model_fit,mean_valence_abs_dev,model_b,0.024191702462957765,r_squared,,,,,0.9619082538362305,0.44236827323320516,200,formula=mean_valence_abs_dev ~ years_musical_education + age + hours_musical_listening + bai + bdi
+MEET,ols_model,mean_valence_abs_dev,musical_experience,0.014632623409849218,model_c,,,,,0.7881111244714606,0.4315936308133892,200,model=model_c;r_squared=0.026856
+MEET,ols_model,mean_valence_abs_dev,age,-0.012952644333166861,model_c,,,,,-1.9610132818043873,0.05130865227698297,200,model=model_c;r_squared=0.026856
+MEET,ols_model,mean_valence_abs_dev,hours_musical_listening,0.0009382637849546789,model_c,,,,,0.42652331500059726,0.6701994732582293,200,model=model_c;r_squared=0.026856
+MEET,ols_model,mean_valence_abs_dev,bai,-0.0016691608491396165,model_c,,,,,-0.23049996309439816,0.8179461775679052,200,model=model_c;r_squared=0.026856
+MEET,ols_model,mean_valence_abs_dev,bdi,0.001656076287750585,model_c,,,,,0.20119596007228926,0.8407561409011381,200,model=model_c;r_squared=0.026856
+MEET,ols_model_fit,mean_valence_abs_dev,model_c,0.026856400039255823,r_squared,,,,,1.0707857725880947,0.37785862066988735,200,formula=mean_valence_abs_dev ~ musical_experience + age + hours_musical_listening + bai + bdi
+MEET,ols_model,mean_arousal_abs_dev,group_bin,0.10338906473193109,model_group_age,,,,,1.2235041522266048,0.22260076265408646,200,model=model_group_age;r_squared=0.007793
+MEET,ols_model,mean_arousal_abs_dev,age,-0.0014147377684383018,model_group_age,,,,,-0.19720629801313785,0.8438694195539007,200,model=model_group_age;r_squared=0.007793
+MEET,ols_model_fit,mean_arousal_abs_dev,model_group_age,0.007792896313503772,r_squared,,,,,0.7736290982277207,0.46273218259175375,200,formula=mean_arousal_abs_dev ~ group_bin + age
+MEET,ols_model,mean_arousal_abs_dev,group_bin,0.12357907634337353,model_a,,,,,1.4074422560426552,0.16089649039291865,200,model=model_a;r_squared=0.021759
+MEET,ols_model,mean_arousal_abs_dev,age,-0.0017572940899832062,model_a,,,,,-0.24265127284697668,0.8085319047503142,200,model=model_a;r_squared=0.021759
+MEET,ols_model,mean_arousal_abs_dev,hours_musical_listening,0.00036441395158966173,model_a,,,,,0.15014997605337058,0.8808022844040772,200,model=model_a;r_squared=0.021759
+MEET,ols_model,mean_arousal_abs_dev,bai,0.012204623911960512,model_a,,,,,1.533834534160912,0.1266995452845995,200,model=model_a;r_squared=0.021759
+MEET,ols_model,mean_arousal_abs_dev,bdi,-0.012760610639323726,model_a,,,,,-1.412008733751601,0.1595493836466002,200,model=model_a;r_squared=0.021759
+MEET,ols_model_fit,mean_arousal_abs_dev,model_a,0.021758821177088272,r_squared,,,,,0.863020571968637,0.5069897761198887,200,formula=mean_arousal_abs_dev ~ group_bin + age + hours_musical_listening + bai + bdi
+MEET,ols_model,mean_arousal_abs_dev,years_musical_education,0.0050506374492313615,model_b,,,,,0.8421474442992222,0.40074239903425,200,model=model_b;r_squared=0.015370
+MEET,ols_model,mean_arousal_abs_dev,age,-0.0033837913997518346,model_b,,,,,-0.45366934442055434,0.6505739094709696,200,model=model_b;r_squared=0.015370
+MEET,ols_model,mean_arousal_abs_dev,hours_musical_listening,0.0005381874639449143,model_b,,,,,0.2185782844002668,0.8272083374390269,200,model=model_b;r_squared=0.015370
+MEET,ols_model,mean_arousal_abs_dev,bai,0.011100532330929834,model_b,,,,,1.4011573696191602,0.1627646641153729,200,model=model_b;r_squared=0.015370
+MEET,ols_model,mean_arousal_abs_dev,bdi,-0.012393800814268455,model_b,,,,,-1.3678441688249228,0.17294321953430294,200,model=model_b;r_squared=0.015370
+MEET,ols_model_fit,mean_arousal_abs_dev,model_b,0.0153697495791415,r_squared,,,,,0.6056550501224154,0.6956661822100177,200,formula=mean_arousal_abs_dev ~ years_musical_education + age + hours_musical_listening + bai + bdi
+MEET,ols_model,mean_arousal_abs_dev,musical_experience,0.027243615440517836,model_c,,,,,1.3366025398287618,0.18291782639581872,200,model=model_c;r_squared=0.020788
+MEET,ols_model,mean_arousal_abs_dev,age,-0.0015362506341284592,model_c,,,,,-0.2118636491975327,0.8324358265108063,200,model=model_c;r_squared=0.020788
+MEET,ols_model,mean_arousal_abs_dev,hours_musical_listening,0.0004929953036637506,model_c,,,,,0.20414224328287991,0.8384563389013793,200,model=model_c;r_squared=0.020788
+MEET,ols_model,mean_arousal_abs_dev,bai,0.012020004750276675,model_c,,,,,1.511992331116777,0.1321630608088266,200,model=model_c;r_squared=0.020788
+MEET,ols_model,mean_arousal_abs_dev,bdi,-0.012517001258644533,model_c,,,,,-1.385196838322759,0.167582971522032,200,model=model_c;r_squared=0.020788
+MEET,ols_model_fit,mean_arousal_abs_dev,model_c,0.02078757081629956,r_squared,,,,,0.8236800551488023,0.5341646878999016,200,formula=mean_arousal_abs_dev ~ musical_experience + age + hours_musical_listening + bai + bdi

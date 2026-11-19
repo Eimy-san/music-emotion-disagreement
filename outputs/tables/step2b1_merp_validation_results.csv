@@ -1,0 +1,11 @@
+dataset,section,outcome,predictor,estimate,estimate_label,group_a,group_b,group_a_mean,group_b_mean,statistic,p_value,n,extra
+MERP,worker_level_group_comparison,mean_valence_abs_dev,Yes_minus_No,-0.060599825327652956,mean_difference,Yes,No,0.372259081055835,0.43285890638348795,-3.72876602963159,0.0002385860565582868,259,welch_t_test
+MERP,worker_level_group_comparison,mean_arousal_abs_dev,Yes_minus_No,-0.06336281479220157,mean_difference,Yes,No,0.36571956288605645,0.429082377678258,-3.9864093731144594,8.797439645032543e-05,259,welch_t_test
+MERP,worker_level_correlation,mean_valence_abs_dev,age_num,0.17487860227472493,pearson_r,,,,,0.17487860227472493,0.004763973931029928,259,pearson_correlation
+MERP,worker_level_correlation,mean_arousal_abs_dev,age_num,0.19131595537242913,pearson_r,,,,,0.19131595537242913,0.0019836942060141535,259,pearson_correlation
+MERP,ols_model,mean_valence_abs_dev,training_bin,-0.050191318420108176,model_training_age,,,,,-2.884332332137768,0.0042562607674456925,259,model=model_training_age;r_squared=0.061095
+MERP,ols_model,mean_valence_abs_dev,age_num,0.0012272441655172316,model_training_age,,,,,1.6001201042894813,0.11080527922988691,259,model=model_training_age;r_squared=0.061095
+MERP,ols_model_fit,mean_valence_abs_dev,model_training_age,0.06109464983738322,r_squared,,,,,8.328970729403792,0.00031303447315406954,259,formula=mean_valence_abs_dev ~ training_bin + age_num
+MERP,ols_model,mean_arousal_abs_dev,training_bin,-0.051880740665912126,model_training_age,,,,,-3.048678896234942,0.002539472618039627,259,model=model_training_age;r_squared=0.070354
+MERP,ols_model,mean_arousal_abs_dev,age_num,0.0013538261159543358,model_training_age,,,,,1.8049838307937374,0.0722521642509427,259,model=model_training_age;r_squared=0.070354
+MERP,ols_model_fit,mean_arousal_abs_dev,model_training_age,0.07035391417971115,r_squared,,,,,9.686805712796657,8.803564906179153e-05,259,formula=mean_arousal_abs_dev ~ training_bin + age_num

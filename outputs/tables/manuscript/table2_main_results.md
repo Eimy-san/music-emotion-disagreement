@@ -1,0 +1,10 @@
+# Table 2. Numerical summary of the primary results retained for the main text.
+
+| Dataset | Analysis level | Outcome | Contrast | Group A | Mean A | Group B | Mean B | Estimate | p value | n |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MEET | Stimulus-level | valence_std | Musician - non-musician | Musician | 2.109 | Non-musician | 2.038 | 0.071 | 1.14e-08 | 116 |
+| MEET | Stimulus-level | arousal_std | Musician - non-musician | Musician | 2.132 | Non-musician | 2.036 | 0.096 | 6.84e-11 | 116 |
+| MERP | Worker-level | mean_valence_abs_dev | Yes - No | Yes | 0.372 | No | 0.433 | -0.061 | 2.39e-04 | 259 |
+| MERP | Worker-level | mean_arousal_abs_dev | Yes - No | Yes | 0.366 | No | 0.429 | -0.063 | 8.80e-05 | 259 |
+
+Note. Point estimates and p values are reproduced from the saved comparison-result tables. Confidence intervals are not shown because they were not included in the frozen result exports.
