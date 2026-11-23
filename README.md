@@ -7,7 +7,7 @@ Analysis code and processed analysis tables for:
 The study examines whether listener-related variables (musician status / musical training, age) are associated with disagreement in music emotion judgments, using continuous valence and arousal disagreement measures in two non-equivalent datasets:
 
 - **MEET** (Musical Emotion Evaluation Test; primary dataset): 116 short composed stimuli rated by 200 participants (100 musicians, 100 non-musicians). Stimulus-level standard deviation of valence/arousal ratings compared between groups.
-- **MERP** (Music Emotion Recognition with Profile information; external validation dataset): 50 full-length songs rated by 259 approved crowdsourced workers. Worker-level mean absolute deviation from song-level consensus compared by training status.
+- **MERP** (Music Emotion Recognition with Profile information; comparative dataset): 50 full-length songs rated by 259 approved crowdsourced workers. Worker-level mean absolute deviation from song-level consensus compared by training status.
 
 ## Data sources
 
@@ -15,8 +15,8 @@ Raw data are **not** redistributed in this repository. Download them from the or
 
 | Dataset | Source |
 | --- | --- |
-| MEET | Kaggle: <http://www.kaggle.com/kohenyan/music-emotion-recognition-with-profile-information> |
-| MERP | Mendeley Data: <https://data.mendeley.com/datasets/y2j5ybptzd/3> |
+| MEET | Mendeley Data: <https://data.mendeley.com/datasets/y2j5ybptzd/3> |
+| MERP | Kaggle: <http://www.kaggle.com/kohenyan/music-emotion-recognition-with-profile-information> |
 
 Place the raw files under `data/raw/meet/` and `data/raw/merp/` (mirroring the original file layout). The processed tables under `data/processed/` are included so that all downstream analyses can be verified without re-running the raw-data reconstruction step.
 
@@ -38,10 +38,24 @@ All analyses were conducted in **Python 3.10.21** with the pinned dependencies l
 
 ## How to reproduce
 
+### Option 1 — Verify the reported results without raw data
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+python verify_results.py
+```
+
+`verify_results.py` recomputes the primary statistics reported in the manuscript directly from the processed analysis tables included in this repository (`data/processed/`): the stimulus-level MEET comparisons, the worker-level MERP comparisons, Cohen's d with 95% confidence intervals, and the exploratory two-predictor OLS models. It checks the recomputed values against the reported values and exits with an error if any of them do not match.
+
+### Option 2 — Full pipeline from the raw data
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+# place the downloaded MEET files in data/raw/meet/ and MERP files in data/raw/merp/
 python run_analysis.py
 ```
 

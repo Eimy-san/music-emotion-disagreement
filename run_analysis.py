@@ -14,7 +14,25 @@ from music_disagreement.step2a import run_step2a
 from music_disagreement.step2b1 import run_step2b1
 
 
+def check_raw_data() -> bool:
+    required = [
+        PROJECT_ROOT / "data" / "raw" / "meet" / "Raw_Data.xlsx",
+    ]
+    merp_files = PROJECT_ROOT / "data" / "raw" / "merp"
+    merp_present = merp_files.exists() and any(merp_files.glob("*.csv"))
+    return all(path.exists() for path in required) and merp_present
+
+
 def main() -> None:
+    if not check_raw_data():
+        print(
+            "Raw data files were not found under data/raw/meet/ and data/raw/merp/.\n"
+            "Download them from the sources listed in README.md, place them in the "
+            "expected folders, and re-run this script.\n"
+            "To verify the reported results without the raw data, run "
+            "`python verify_results.py` instead."
+        )
+        sys.exit(1)
     run_step2a()
     run_step2b1()
     write_effect_size_table()
